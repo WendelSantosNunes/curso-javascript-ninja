@@ -178,7 +178,7 @@ Quantos metros a pessoa andou? (Use uma instrução para responder e comentário
 inline ao lado da instrução para mostrar a resposta retornada)
 */
 
-console.log(pessoa.caminhouQuantosMetros)
+console.log(pessoa.caminhouQuantosMetros) // 60
 
 /*
 Agora vamos deixar a brincadeira um pouco mais divertida! :D
