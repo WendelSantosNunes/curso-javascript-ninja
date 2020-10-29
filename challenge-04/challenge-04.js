@@ -8,7 +8,7 @@ equivalente booleano para o valor passado no argumento for `true`, ou `false`
 para o contrário.
 */
 
-function isTruthy ( a ){
+var isTruthy = function ( a ){
     return a ? true : false
 }
 
@@ -23,7 +23,16 @@ isTruthy(-0)
 Invoque a função criada acima passando como parâmetro 10 valores `truthy`.
 */
 
-isTruthy(-1,2,3,'1','Wendel',5,6,7,true,'Hello')
+isTruthy(-1)
+isTruthy(2)
+isTruthy(3)
+isTruthy('1')
+isTruthy('Wendel')
+isTruthy(5)
+isTruthy(6)
+isTruthy(7)
+isTruthy([])
+isTruthy({})
 
 /*
 Declare uma variável chamada `carro`, atribuindo à ela um objeto com as
@@ -120,7 +129,7 @@ carro.adicionar = function ( numerosPessoas ){
     if(totalPessoas > carro.assentos){
         var pessoas = carro.assentos - carro.quantidadePessoas
         var plura = pessoas === 1 ? ' pesssoa': ' pessoas' 
-        return 'Essa quantidadee Passou do limite possível de pessoa dentro no carro, por favor, adicione só ' + pessoas + plura + '.'
+        return 'Essa quantidade Passou do limite possível de pessoa dentro no carro, por favor, adicione só ' + pessoas + plura + '.'
     }
 
     carro.quantidadePessoas += numerosPessoas
