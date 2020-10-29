@@ -199,20 +199,17 @@ correta, de acordo com os dados inseridos no objeto.
 */
 
 pessoa.apresentacao = function(){
+    let eusou = 'o'
+    let anos = 'anos'
+    let metros = 'metros'
     if(pessoa.sexo === 'Feminino'){
-        var eusou = 'a'
-    }else {
-        var eusou = 'o'
+        eusou = 'a'
     }
     if(pessoa.idade === 1){
-        var anos = 'ano'
-    }else{
-        var anos = 'anos'
+        anos = 'ano'
     }
     if(pessoa.caminhouQuantosMetros === 1){
-        var metros = 'metro'
-    }else{
-        var metros = 'metros'
+        metros = 'metro'
     }
     return 'Olá, eu sou '+ eusou + ' ' + pessoa.nome +' '+ pessoa.sobrenome +', tenho '+ pessoa.idade +' '+ anos + ', ' + pessoa.altura +  ', meu peso é '+ pessoa.peso + ' e, só hoje, eu já caminhei ' + pessoa.caminhouQuantosMetros + ' ' + metros + '!'
 }
